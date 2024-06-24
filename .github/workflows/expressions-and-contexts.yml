@@ -1,5 +1,7 @@
 name: EXpressions and Contexts
 on: [push, pull_request, issues, workflow_dispatch]
+# a name for the workflow
+run-name: "Expressions and Contexts by @${{github.actor}}, event: ${{ github.event}}"
 jobs:
     using-expressions-and-contexts:
         runs-on: ubuntu-latest
